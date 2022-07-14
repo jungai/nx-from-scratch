@@ -1,0 +1,58 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/express-custom/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/node:webpack",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/express-custom",
+        "main": "apps/express-custom/src/index.ts",
+        "tsConfig": "apps/express-custom/tsconfig.app.json",
+        "generatePackageJson": true,
+        "outputFileName": "index.js"
+      },
+      "configurations": {
+        "production": {
+          "optimization": true,
+          "extractLicenses": true,
+          "inspect": false,
+          "fileReplacements": [
+            {
+              "replace": "apps/express-custom/src/environments/environment.ts",
+              "with": "apps/express-custom/src/environments/environment.prod.ts"
+            }
+          ]
+        }
+      }
+    },
+    "start": {
+      "executor": "@nrwl/node:node",
+      "options": {
+        "buildTarget": "express-custom:build"
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "express-custom:build:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/express-custom/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/express-custom"],
+      "options": {
+        "jestConfig": "apps/express-custom/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
