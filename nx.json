@@ -2,7 +2,7 @@
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "npmScope": "next-backend",
   "affected": {
-    "defaultBase": "master"
+    "defaultBase": "dev"
   },
   "implicitDependencies": {
     "package.json": {
@@ -23,6 +23,5 @@
     "build": {
       "dependsOn": ["^build"]
     }
-  },
-  "defaultProject": "nest-service"
+  }
 }
