@@ -1,16 +1,16 @@
 {
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/service-a/src",
+  "sourceRoot": "apps/nest-service/src",
   "projectType": "application",
   "targets": {
     "build": {
       "executor": "@nrwl/node:webpack",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/service-a",
-        "main": "apps/service-a/src/main.ts",
-        "tsConfig": "apps/service-a/tsconfig.app.json",
-        "assets": ["apps/service-a/src/assets"]
+        "outputPath": "dist/apps/nest-service",
+        "main": "apps/nest-service/src/main.ts",
+        "tsConfig": "apps/nest-service/tsconfig.app.json",
+        "assets": ["apps/nest-service/src/assets"]
       },
       "configurations": {
         "production": {
@@ -19,21 +19,21 @@
           "inspect": false,
           "fileReplacements": [
             {
-              "replace": "apps/service-a/src/environments/environment.ts",
-              "with": "apps/service-a/src/environments/environment.prod.ts"
+              "replace": "apps/nest-service/src/environments/environment.ts",
+              "with": "apps/nest-service/src/environments/environment.prod.ts"
             }
           ]
         }
       }
     },
-    "serve": {
+    "start": {
       "executor": "@nrwl/node:node",
       "options": {
-        "buildTarget": "service-a:build"
+        "buildTarget": "nest-service:build"
       },
       "configurations": {
         "production": {
-          "buildTarget": "service-a:build:production"
+          "buildTarget": "nest-service:build:production"
         }
       }
     },
@@ -41,14 +41,14 @@
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/service-a/**/*.ts"]
+        "lintFilePatterns": ["apps/nest-service/**/*.ts"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/service-a"],
+      "outputs": ["coverage/apps/nest-service"],
       "options": {
-        "jestConfig": "apps/service-a/jest.config.ts",
+        "jestConfig": "apps/nest-service/jest.config.ts",
         "passWithNoTests": true
       }
     }

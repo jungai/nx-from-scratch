@@ -12,6 +12,7 @@
     "@nestjs/common": "^8.0.0",
     "@nestjs/core": "^8.0.0",
     "@nestjs/platform-express": "^8.0.0",
+    "@swc/helpers": "~0.3.3",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.0.0",
     "tslib": "^2.3.0"
@@ -26,6 +27,9 @@
     "@nrwl/nest": "14.4.2",
     "@nrwl/node": "14.4.2",
     "@nrwl/workspace": "14.4.2",
+    "@swc/cli": "~0.1.55",
+    "@swc/core": "^1.2.173",
+    "@swc/jest": "0.2.20",
     "@types/jest": "27.4.1",
     "@types/node": "16.11.7",
     "@typescript-eslint/eslint-plugin": "^5.29.0",
