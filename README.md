@@ -8,6 +8,17 @@ This project was generated using [Nx](https://nx.dev).
 
 🔎 **Smart, Fast and Extensible Build System**
 
+## Check list
+
+- [x] nx core
+- [x] build with docker
+- [ ] prisma
+- [ ] environment in nx
+- [ ] jest -> vitest
+- [ ] ci/cd (github action)
+- [ ] nx cloud ??
+- [ ] move front-end (not offical plugin) to nx (or stay with turbo)
+
 ## Adding capabilities to your workspace
 
 Nx supports many plugins which add capabilities for developing different types of applications and different tools.
