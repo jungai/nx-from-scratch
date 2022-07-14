@@ -5,6 +5,7 @@
     "enums": "libs/enums",
     "express-custom": "apps/express-custom",
     "my-app": "apps/my-app",
+    "nest-interceptors": "libs/nest/interceptors",
     "nest-service": "apps/nest-service",
     "types": "libs/types"
   }

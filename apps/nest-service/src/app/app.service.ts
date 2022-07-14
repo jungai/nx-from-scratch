@@ -6,6 +6,7 @@ import { Love } from '@next-backend/enums';
 export class AppService {
   getData() {
     const list: TLoveList = ['naruk', 'iu', 'rose'];
+    console.log('hot reload!!');
     return {
       message: `Welcome to nest-service! ${list.join()}`,
       love: Object.values(Love),

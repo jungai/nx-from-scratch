@@ -16,6 +16,9 @@
     "baseUrl": ".",
     "paths": {
       "@next-backend/enums": ["libs/enums/src/index.ts"],
+      "@next-backend/nest/interceptors": [
+        "libs/nest/interceptors/src/index.ts"
+      ],
       "@next-backend/types": ["libs/types/src/index.ts"]
     }
   },
