@@ -1,1 +1,1 @@
-export * from './lib/iu.interceptors';
+export * from './lib/iu.interceptor';
