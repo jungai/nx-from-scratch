@@ -10,7 +10,8 @@
         "outputPath": "dist/apps/nest-service",
         "main": "apps/nest-service/src/main.ts",
         "tsConfig": "apps/nest-service/tsconfig.app.json",
-        "assets": ["apps/nest-service/src/assets"]
+        "assets": ["apps/nest-service/src/assets"],
+        "generatePackageJson": true
       },
       "configurations": {
         "production": {

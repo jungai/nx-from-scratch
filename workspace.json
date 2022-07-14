@@ -2,8 +2,10 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
+    "enums": "libs/enums",
     "express-custom": "apps/express-custom",
     "my-app": "apps/my-app",
-    "nest-service": "apps/nest-service"
+    "nest-service": "apps/nest-service",
+    "types": "libs/types"
   }
 }
