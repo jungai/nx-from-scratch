@@ -1,0 +1,12 @@
+version: 3
+
+tasks:
+  install:
+    cmds:
+      - pnpm install
+
+  docker-nest-service:
+    env:
+      TAG: nest-service
+    cmds:
+      - docker buildx build --platform linux/amd64 -f Dockerfile.nest-service -t $TAG .
