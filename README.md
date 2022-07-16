@@ -1,5 +1,3 @@
-
-
 # NextBackend
 
 This project was generated using [Nx](https://nx.dev).
@@ -11,7 +9,7 @@ This project was generated using [Nx](https://nx.dev).
 ## Check list
 
 - [x] nx core
-- [x] build with docker (currenly image sizing reduce from 600-700MB to 300-320MB)
+- [x] build with docker (currently image sizing reduce from 600-700MB to 300-320MB)
 - [x] prisma
 - [x] ~environment in nx~ normal nest app
 - [ ] jest -> vitest
@@ -89,8 +87,6 @@ Run `nx graph` to see a diagram of the dependencies of your projects.
 ## Further help
 
 Visit the [Nx Documentation](https://nx.dev) to learn more.
-
-
 
 ## ☁ Nx Cloud
 
