@@ -12,8 +12,8 @@ This project was generated using [Nx](https://nx.dev).
 
 - [x] nx core
 - [x] build with docker
-- [ ] prisma
-- [ ] environment in nx
+- [x] prisma
+- [x] ~environment in nx~ normal nest app
 - [ ] jest -> vitest
 - [ ] ci/cd (github action)
 - [ ] nx cloud ??
