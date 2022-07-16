@@ -70,7 +70,8 @@ jobs:
           password: ${{ secrets.TOKEN }}
       - uses: docker/build-push-action@v3
         with:
-          file: './Dockerfile.nest-service'
+          context: .
+          file: 'Dockerfile.nest-service'
           push: true
           tags: |
             kittn888/next-be:latest
