@@ -4,7 +4,7 @@ name: nert-service-ci-cd
 on:
   # Triggers the workflow on push or pull request events but only for the "master" branch
   push:
-    branches: [ "master" ]
+    branches: ['master']
     paths:
       - 'apps/nest-service/**'
       - '.github/workflows/nest-service.yml'
@@ -49,8 +49,10 @@ jobs:
             ${{ runner.os }}-pnpm-store-
 
       - uses: nrwl/nx-set-shas@v2
-      
-      - name: Install dependencies 
+        with:
+          main-branch-name: 'master'
+
+      - name: Install dependencies
         run: |
           pnpm install
           pnpm generate
