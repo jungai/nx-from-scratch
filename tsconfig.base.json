@@ -19,6 +19,7 @@
       "@next-backend/nest/interceptors": [
         "libs/nest/interceptors/src/index.ts"
       ],
+      "@next-backend/nest/prisma": ["libs/nest/prisma/src/index.ts"],
       "@next-backend/types": ["libs/types/src/index.ts"]
     }
   },

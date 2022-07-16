@@ -6,6 +6,7 @@
     "express-custom": "apps/express-custom",
     "my-app": "apps/my-app",
     "nest-interceptors": "libs/nest/interceptors",
+    "nest-prisma": "libs/nest/prisma",
     "nest-service": "apps/nest-service",
     "types": "libs/types"
   }
