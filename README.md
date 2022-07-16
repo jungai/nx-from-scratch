@@ -12,7 +12,7 @@ This project was generated using [Nx](https://nx.dev).
 - [x] build with docker (currently image sizing reduce from 600-700MB to 300-320MB)
 - [x] prisma
 - [x] ~environment in nx~ normal nest app
-- [ ] jest -> vitest
+- [ ] ~jest -> vitest~ currently [nxext/vitest](https://nxext.dev/docs/vitest/overview.html) not supported node api T_T
 - [ ] ci/cd (github action)
 - [ ] nx cloud ??
 - [ ] move front-end (not offical plugin) to nx (or stay with turbo)
