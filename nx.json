@@ -2,7 +2,7 @@
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "npmScope": "next-backend",
   "affected": {
-    "defaultBase": "dev"
+    "defaultBase": "master"
   },
   "implicitDependencies": {
     "package.json": {
