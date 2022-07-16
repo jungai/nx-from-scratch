@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "db:push": "npx prisma db push"
+  },
+  "prisma": {
+    "schema": "../../libs/nest/prisma/schema.prisma"
+  }
+}
