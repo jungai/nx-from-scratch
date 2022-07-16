@@ -10,7 +10,7 @@
     "start:nest-service": "nx run nest-service:start"
   },
   "prisma": {
-    "schema": "./libs/nest/prisma/schema.prisma"
+    "schema": "./prisma/schema.prisma"
   },
   "private": true,
   "dependencies": {

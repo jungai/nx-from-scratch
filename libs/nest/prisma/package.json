@@ -1,8 +1,0 @@
-{
-  "scripts": {
-    "seed": "npx ts-node seed/index.ts"
-  },
-  "prisma": {
-    "seed": "ts-node ./seed/index.ts"
-  }
-}
