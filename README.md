@@ -19,7 +19,7 @@ This project was generated using [Nx](https://nx.dev).
 
 ## Problems (currently)
 
-- when use `nx affected` and no proj have change which mean no build asset it make pipeline fail because no output(dist) folder
+- when use `nx affected` and no proj have change which mean no build asset it make pipeline failed -> maybe solve by versioning
 
 ## Adding capabilities to your workspace
 
