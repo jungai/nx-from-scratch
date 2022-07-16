@@ -17,6 +17,10 @@ This project was generated using [Nx](https://nx.dev).
 - [ ] nx cloud ??
 - [ ] move front-end (not offical plugin) to nx (or stay with turbo)
 
+## Problems (currently)
+
+- when use `nx affected` and no proj have change which mean no build asset it make pipeline fail because no output(dist) folder
+
 ## Adding capabilities to your workspace
 
 Nx supports many plugins which add capabilities for developing different types of applications and different tools.
