@@ -11,7 +11,7 @@ This project was generated using [Nx](https://nx.dev).
 ## Check list
 
 - [x] nx core
-- [x] build with docker
+- [x] build with docker (currenly image sizing reduce from 600-700MB to 300-320MB)
 - [x] prisma
 - [x] ~environment in nx~ normal nest app
 - [ ] jest -> vitest
