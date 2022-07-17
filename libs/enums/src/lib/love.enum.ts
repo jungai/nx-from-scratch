@@ -3,4 +3,5 @@ export enum Love {
   FIRST = 'IU',
   SECOND = 'rose',
   THIRD = 'winter',
+  NEW = 'chaewon',
 }
