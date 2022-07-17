@@ -20,3 +20,7 @@ This project was generated using [Nx](https://nx.dev).
 ## Problems (currently)
 
 - when use `nx affected` and no proj have change which mean no build asset it make pipeline failed -> maybe solve by versioning
+
+## Notes
+
+- we can combine `project.json` and `package.json`, btw we can use normal script with nx
