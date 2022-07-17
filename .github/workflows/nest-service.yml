@@ -1,4 +1,4 @@
-name: nert-service-ci-cd
+name: nest-service-ci-cd
 
 # Controls when the workflow will run
 on:
@@ -8,7 +8,6 @@ on:
     paths:
       - 'apps/nest-service/**'
       - '.github/workflows/nest-service.yml'
-      - 'Dockerfile.nest-service'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
