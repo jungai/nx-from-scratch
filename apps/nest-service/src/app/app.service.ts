@@ -5,7 +5,14 @@ import { Love } from '@next-backend/enums';
 @Injectable()
 export class AppService {
   getData() {
-    const list: TLoveList = ['naruk', 'iu', 'rose', 'winter', 'karina'];
+    const list: TLoveList = [
+      'naruk',
+      'iu',
+      'rose',
+      'winter',
+      'karina',
+      'chaewon',
+    ];
     console.log('hot reload!!');
     return {
       message: `Welcome to nest-service! ${list.join()}`,
